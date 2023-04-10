@@ -1,12 +1,26 @@
 import React, {useState} from "react";
 import './createTrick.css'
 
-const createTrick = ({ addTrick }) => {
+const CreateTrick = ({ addTrick }) => {
   const [name, setName] = useState('');
   const [stance, setStance] = useState('');
   const [obstacle, setObstacle] = useState('');
   const [tutorial, setTutorial] = useState('');
 
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const newTrick = {
+      name,
+      stance, 
+      obstacle, 
+      tutorial
+    };
+    addTrick(newTrick);
+    setName('');
+    setStance('');
+    setObstacle('');
+    setTutorial('');
+  }
 
   return (
     <form className="create-trick" onSubmit={handleSubmit}>
@@ -38,4 +52,4 @@ const createTrick = ({ addTrick }) => {
   );
 };
 
-export default createTrick;
+export default CreateTrick;

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import { fetchAllTricks } from '../../apiCalls';
 import TrickList from '../TrickList/TrickList';
+import createTrick from '../CreateTrick/createTrick';
 
 const App = () => {
    const [tricks, setTricks] = useState([]);

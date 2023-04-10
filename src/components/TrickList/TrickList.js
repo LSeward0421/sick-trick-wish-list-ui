@@ -18,6 +18,7 @@ const TrickList = ({ tricks }) => {
         </a>
     </div>
   })
+  
   return (
     <div className= "tricks-container">
       {renderedTricks}

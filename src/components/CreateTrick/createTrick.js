@@ -1,5 +1,5 @@
-import React, {useState} from "react";
-import './createTrick.css'
+import React, { useState } from "react";
+import './CreateTrick.css'
 
 const CreateTrick = ({ addTrick }) => {
   const [name, setName] = useState('');

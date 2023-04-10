@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import { fetchAllTricks } from '../../apiCalls';
+import TrickList from '../TrickList/TrickList';
 
 const App = () => {
    const [tricks, setTricks] = useState([]);
@@ -16,6 +17,7 @@ const App = () => {
     return (
       <div className="App">
         <h1>Sick Trick Wish List</h1>
+        <TrickList tricks={tricks} />
       </div>
     );
   }

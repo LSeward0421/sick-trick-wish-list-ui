@@ -47,7 +47,7 @@ const CreateTrick = ({ addTrick }) => {
         value={tutorial}
         onChange={(event) => setTutorial(event.target.value)}
       />
-      <button type="submit">SEND IT</button>
+      <button type="submit">SEND IT!</button>
     </form>
   );
 };

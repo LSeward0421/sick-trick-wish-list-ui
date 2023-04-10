@@ -4,7 +4,7 @@ import './CreateTrick.css'
 const CreateTrick = ({ addTrick }) => {
   const [name, setName] = useState('');
   const [stance, setStance] = useState('');
-  const [obstacle, setObstacle] = useState('');
+  const [obstacle, setObstacle] = useState('Flatground');
   const [tutorial, setTutorial] = useState('');
 
   const handleSubmit = (event) => {
